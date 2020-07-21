@@ -17,6 +17,7 @@ function triangle(...args) {
   if (angles.indexOf(0) !== -1 || !validTriangle(angles)) return "invalid";
 
   let largestAngle = angles[angles.length - 1];
+  
   if (largestAngle < 90) {
     return "acute";
   } else if (largestAngle === 90) {
